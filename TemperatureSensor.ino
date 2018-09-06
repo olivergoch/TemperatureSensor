@@ -5,12 +5,11 @@ double rawTemp = 0;
 void setup()
 {
   Serial.begin(9600);
-  analogReference(INTERNAL); //Putting Everything to reference
+  analogReference(INTERNAL); //Putting everything to reference
 }
 
 void loop()
 {
-  
   rawTemp = analogRead(tempPin);
   Serial.println(rawTemp);
   //conversion equation
